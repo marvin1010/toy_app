@@ -1,12 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @user %>
+<% if @micropost %>
 <p>
   <strong>Users first post:</strong>
   <p>
   <%= @micropost.content %>
   </p>
 </p>
+<% end %>
 
 <div>
   <%= link_to "Edit this user", edit_user_path(@user) %> |
